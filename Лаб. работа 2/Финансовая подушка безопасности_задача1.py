@@ -7,8 +7,7 @@ increase = 0.05  # Ежемесячный рост цен
 
 months = 0  #Без долгов, мес.
 while money_capital >= 0:
-    money_capital += salary  #+ЗП в подушку безопасности
-    money_capital -= spend  #Вычитаем траты
+    money_capital += salary-spend  #+ЗП в подушку безопасности с вычетом трат
     spend += spend * increase  # Увеличиваем траты на 5% ежемесячно
     months += 1  # Увеличиваем количество месяцев
 
