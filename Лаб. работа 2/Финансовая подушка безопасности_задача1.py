@@ -11,7 +11,5 @@ while money_capital >= 0:
     money_capital -= spend  #Вычитаем траты
     spend += spend * increase  # Увеличиваем траты на 5% ежемесячно
     months += 1  # Увеличиваем количество месяцев
-    if money_capital < 0:
-        months -=1
 
-print("Количество месяцев, которое можно протянуть без долгов:", months)
+print("Количество месяцев, которое можно протянуть без долгов:", months-1)
